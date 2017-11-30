@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+  }
+   
+  
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: rgb(226, 245, 209);
+  
+  }
+
+  .booked {
+    width: 750px;
+    height: 500px;
+    margin: 100px auto;
+    background: rgb(240, 241, 215);
+    box-shadow:  rgba(31, 30, 30, 0.1);
+    border: 2px solid rgb(77, 76, 73);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+  
+  }
+
+  .title {
+    height: 60px;
+    border-bottom: 3px solid rgb(68, 77, 83);
+    padding: 20px 30px;
+    color: #5E6977;
+    font-size: 18px;
+    font-weight: 400;
+   
+  }
+   
+  .item {
+    padding: 20px 30px;
+    height: 600px;
+    display: flex;
+  }
+   
+  .item:nth-child(3) {
+    border-top:  5px solid rgb(162, 180, 195);
+    border-bottom:  5px solid rgb(162, 180, 195);
+  }
+
+
+  .image {
+    margin-right: 50px;
+ 
+  }
+  .caption {
+    display: block;
+    text-align:center;
+    font-size: 16px;
+    font-style: 'Impact';
+}
+ 
+  .description {
+    padding-top: 10px;
+    margin-right: 100px;
+    width: 200px;
+  
+   
+  }
+  
+
+   
+  .total-price {
+    width: 90px;
+    padding-top: 25px;
+    text-align: center;
+    font-size: 16px;
+    color: #43484D;
+    font-weight: 300;
+  }
+
+ 
