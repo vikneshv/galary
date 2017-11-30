@@ -46,9 +46,14 @@
   }
 
 
-  .image {
+  .image:hover {
     margin-right: 50px;
- 
+  
+      filter: gray; 
+      -webkit-filter: grayscale(1); 
+      cursor:pointer;
+
+   
   }
   .caption {
     display: block;
@@ -58,6 +63,7 @@
 }
  
   .description {
+    padding: 20px 30px;
     padding-top: 10px;
     margin-right: 100px;
     width: 200px;
@@ -69,7 +75,7 @@
    
   .total-price {
     width: 90px;
-    padding-top: 25px;
+    padding-top: 10px;
     text-align: center;
     font-size: 16px;
     color: #43484D;
