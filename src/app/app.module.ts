@@ -1,6 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {ImageService} from './services/image.service';
+//new
+import {ContactService} from './services/contact.service';
+//new
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { HttpModule } from '@angular/http';
+import { HttpClient } from '@angular/common/http';
 import { HttpClientModule } from '@angular/common/http';
 import * as $ from 'jquery';
 import { AppComponent } from './app.component';
@@ -13,7 +19,7 @@ import { AboutComponent } from './about/about.component';
 import {Routes, RouterModule} from '@angular/router';
 import { BooksComponent } from './books/books.component';
 const appRoutes: Routes = [
-  { path: 'galleries', redirectTo:'/galleries', pathMatch: 'full'},
+  { path: '', redirectTo:'/galleries', pathMatch: 'full'},
   { path: 'galleries', component: GalleriesComponent},
   { path: 'contact', component: ContactComponent},
   { path: 'about', component: AboutComponent},
@@ -33,10 +39,11 @@ const appRoutes: Routes = [
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
-    BrowserModule,
+    BrowserModule,HttpModule, HttpClientModule
   ], 
    
-  providers: [ImageService],
+  providers: [ImageService,ContactService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+platformBrowserDynamic().bootstrapModule(AppModule);

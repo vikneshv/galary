@@ -1,3 +1,7 @@
 <p>
   about works!
-</p>
+<p>
+<button (click)="getPost()">add</button>
+<div ngFor="let post of post |async">
+  {{post| json }}
+</div>

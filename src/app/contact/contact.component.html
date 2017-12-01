@@ -14,17 +14,18 @@
         <div class="form-group"> 
         <label class="control-label col-sm-2" for="title">Title:</label>
         <div class="col-sm-4">
-        <input type="text" style="width:500px;" class="form-control" id="title" placeholder="Enter the Title" value=" ">
+        <input type="text" style="width:500px;" class="form-control" id="title" placeholder="Enter the Title" value=" "(keyup)="onNamekeyup($event)">
         </div>
         </div>
                 
         <div class="form-group"> 
         <label class="control-label col-sm-2" for="content">message:</label>
         <div class="col-sm-4">
-        <input style=" width:500px;" type="text" class="form-control" id="content" placeholder="body content" value=""></div>
+        <input style=" width:500px;" type="text" class="form-control" id="content" placeholder="body content" value=""(keyup)="onNamekeyup($event)"></div>
         </div>
         </form>
-        <button  onclick="myfunction()" class="btn btn-default" style="margin-left:120px;"> ADD </button>
+        <button  (click)="myfunction()" class="btn btn-default" style="margin-left:120px;"> ADD </button>
         </div>  
-    
-  
+   
+       
+      
